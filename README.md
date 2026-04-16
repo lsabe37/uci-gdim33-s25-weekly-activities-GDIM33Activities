@@ -22,12 +22,12 @@ Original Concept: This game will be a combination of two different game modes. T
 
 ## W3
 
-# Activity 1
+### Activity 1
 
 [Breakdown](https://docs.google.com/presentation/d/1V5xXVmgtFbwtfhezYsHWtT8_yKYKTivaR_gJYe6Lf6Y/edit?usp=sharing)
 
 
-# Activity 2
+### Activity 2
 
 1. It is useful to save the vent name for explore-to-dialogue state transition as a Scene variable so that it can be accessed from any part of the scene.
 

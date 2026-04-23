@@ -38,7 +38,7 @@ Original Concept: This game will be a combination of two different game modes. T
 4. The concept of game states is relevant to my vertical slice since I plan to change certain visual elements of the background depending on actions that the player takes (such as turning the lights off). I can use game states to determine which apperance the background will take. 
 
 
-## W3
+## W4
 
 ### Activity 1
 

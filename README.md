@@ -57,3 +57,28 @@ If the programmer programs a branching dialogue system which utilizes dialogueOb
 There is no limit to the number of dialogue nodes that the writer could create without writing any code. 
 
 The purpose of the "Regenerate Nodes" button is to provide an easy way to add new nodes to the node library.
+
+
+## W5
+
+### Activity 1
+
+#### Step 1: Create and import tilemap assets
+
+Part A: Draw the Sprites on a separate sofware and upload the file asset to Unity.
+
+Part B: Slice the Sprite into separate tiles.
+
+Part C: Import the tilemap asset to the Tile Palette.
+
+#### Step 2: Set up tilemaps in Scene
+
+Part A: Add the regular tiles to the Scene to build the ground and walls.
+
+Part B: Add the hazard tiles to the Scene to represent the traps. Adjust the Tilemap color to red to indicate that these tiles are dangerous.
+
+Part C: Create a Hazard script for the hazard tiles which will reduce the player's HP by 5 points when collided with. This will be done using an OnCollisionEneter2D() method. When this method runs, it subtract 5f from the health float variable in the PlayerHealth script. Add a Debug log which shows how much HP the player has remainning.
+
+### Activity 2
+
+I created the tilemap assets and built the ground and walls for the boss room. I added in the hazardous tiles and created the Hazard script which reduces the player's HP. I also created the PlayerHealth script and the PlayerLocator script, which are used in this system. I currently have set up a debug log which shows the player's current HP upon taking damage.

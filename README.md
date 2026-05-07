@@ -82,3 +82,26 @@ Part C: Create a Hazard script for the hazard tiles which will reduce the player
 ### Activity 2
 
 I created the tilemap assets and built the ground and walls for the boss room. I added in the hazardous tiles and created the Hazard script which reduces the player's HP. I also created the PlayerHealth script and the PlayerLocator script, which are used in this system. I currently have set up a debug log which shows the player's current HP upon taking damage.
+
+
+## W6
+
+### Activity 1
+The new build includes 7 different customer NPC's for the anomaly hunt mode. This build has improved the UI for the anomaly hunt mode and fixed the dialogue system bugs. This build also includes the 2D platformer mode with a player and boss enemy. The player can move with WASD, jump, dash, and attack. The boss has a varied moveset.
+
+[Itch build](https://masterfrog1.itch.io/vertical-slice-milestone-2)
+
+The goal of this week's playtest is to see if the UI is easy to navigate in the 2D platformer section and to get the player's input on the customer designs and dialogue lines. Another goal is to get feedback on the 2D platformer section. This game mode is still largely in progress, so the main goal would be to get input on what boss moves feel to easy and what moves feel unfair or confusing.
+
+Playtest notes: The UI is easy to navigate. The characters look interesting. There should be more windows to attack the boss (boss attacks too often). 
+
+### Activity 2
+
+1. The Multiply setting makes the color darker because it multiplies the rgb values which are values between 0 and 1 (which are fractions). Thus, the values will be smaller and results in a darker color.
+
+
+2. If Multiply is used to combine the alpha values, it will result in a more translucent color. This is because it will multiply two fractions together, which will result in a smaller number.
+
+3. The shader gets the UV values from the mesh data.
+
+4. I found it interesting how I could use math to manipulate colors.

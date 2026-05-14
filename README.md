@@ -106,7 +106,7 @@ Playtest notes: The UI is easy to navigate. The characters look interesting. The
 
 4. I found it interesting how I could use math to manipulate colors.
 
-## 7
+## W7
 
 1. The data for the Vertex Color node comes from the mesh vertex.
 

@@ -105,3 +105,19 @@ Playtest notes: The UI is easy to navigate. The characters look interesting. The
 3. The shader gets the UV values from the mesh data.
 
 4. I found it interesting how I could use math to manipulate colors.
+
+## 7
+
+1. The data for the Vertex Color node comes from the mesh vertex.
+
+2. The color of the shiba is blended at the edges of different regions of color because Unity is calculating the color for the pixels between the different regions.
+
+3. The shiba is less detailed when using vertex color because the colors are only stored at each vertex point and then are interpolated across the surface. Vertex color is useful for optimization because of this. One use of vertex color would be to render a horde of enemies that are supposed to be seen by the player from a distance. Since there are many enemies and they don't need to be very detailed, vertex colors should be used.
+
+4. The mesh's vertex normals appear awkward because they are not blended at the edges.
+
+5. One other piece of vertex data that can be tested is the UV coordinates. UV coordinates would be useful to test because it will help debug issues that are related to the UV map.
+
+6. There is an error in the lighting in step 5 because the light direction vector is pointing towards the shiba, however, the normal vectors are pointing away. This causes the lighting effect on the shiba to be inverted.
+
+7. The Blend mode was set to Additive so that the texture will appear brighter. Since the texture is supposed to represent fire, changing the Blend mode to Additive can achieves a glowing effect that helps enhance the appearance.

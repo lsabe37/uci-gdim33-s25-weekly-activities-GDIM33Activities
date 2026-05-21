@@ -121,3 +121,25 @@ Playtest notes: The UI is easy to navigate. The characters look interesting. The
 6. There is an error in the lighting in step 5 because the light direction vector is pointing towards the shiba, however, the normal vectors are pointing away. This causes the lighting effect on the shiba to be inverted.
 
 7. The Blend mode was set to Additive so that the texture will appear brighter. Since the texture is supposed to represent fire, changing the Blend mode to Additive can achieves a glowing effect that helps enhance the appearance.
+
+## W8
+
+### Activity 1
+
+The new build includes a more fleshed out 2D platformer mode. The hitboxes for the boss' melee attacks have now been added, so the player will take damage when they get hit by any of the boss' attacks. The game over screen is now added to the 2D platformer mode. This screen will appear when the player's HP reaches 0. The game over screen features a retry button which will allow the player to reattempt the fight. The boss now has a mini familiar which flies around and shoots at the player when they are near it.
+
+[Itch build](https://masterfrog1.itch.io/verticalslicetest3)
+
+The main goal of this playtest is to see if the boss is too difficult. I would like to see if there are any attacks from the boss that are too hard to dodge/parry or feel unfair. The playtest will also be used to see if there are any bugs in the 2D platformer mode that I may have overlooked.
+
+Playtest notes: It is unclear at first which healthbar is the player's and which is the boss'. It is unclear whether the boss angel familiar or the boss gameobject is the actual boss. The familiar should appear later.
+
+### Activity 2A
+
+1. The stencil buffer is being used to create the outline only around the shiba object. This is done by setting the layer mask to Outline only. By doing this, the Renderer feature can only draw GameObjects on the Outline layer.
+
+2. The object is being drawn twice becuase there are two different zones: the one with the base texture and the one with the base texture multiplied with the DarkGraph being applied. 
+
+3. All the lighting sections are added together in order to create the cel shaded effect. By adding the result of the shadowed aread with the result of the lit area, the final color creates this effect.
+
+4. Changing the layer the Shiba is on enables or disables the outline effect because the stencil write pass has the layer mask set to Outline only. Thus, when the Shiba's layer is moved out of the Outline layer, it no longer draws the outline.

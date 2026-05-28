@@ -143,3 +143,14 @@ Playtest notes: It is unclear at first which healthbar is the player's and which
 3. All the lighting sections are added together in order to create the cel shaded effect. By adding the result of the shadowed aread with the result of the lit area, the final color creates this effect.
 
 4. Changing the layer the Shiba is on enables or disables the outline effect because the stencil write pass has the layer mask set to Outline only. Thus, when the Shiba's layer is moved out of the Outline layer, it no longer draws the outline.
+
+## W9
+
+### Activity 1
+
+The game Sekiro Shadows Die Twice uses many rendering techniques to create immersive effects. One effect that the game uses is a full-screen post processing effect to create a red, throbbing effect that obscures the screen when the player is at low HP. I can try to implement something similar by creating a full-screen red, throbbing effect when the player is at low HP during the boss fight or when the player is at low sanity in the store management mode. I can implement this using a texture for the red effect and a URP sample buffer within the shader graph.
+
+### Activity 2
+
+
+One problem I solved today was setting up my shader graph so that it works on 2D sprites. Intiially, I was following along with the activity from last week (which was for 3D) and noticed that my shaders weren't working. I solved this issue by creating a shader graph for 2D sprites and setting up MainTex so that the shader material can be used on sprites.

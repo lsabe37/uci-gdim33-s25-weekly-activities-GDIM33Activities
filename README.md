@@ -151,6 +151,6 @@ Playtest notes: It is unclear at first which healthbar is the player's and which
 The game Sekiro Shadows Die Twice uses many rendering techniques to create immersive effects. One effect that the game uses is a full-screen post processing effect to create a red, throbbing effect that obscures the screen when the player is at low HP. I can try to implement something similar by creating a full-screen red, throbbing effect when the player is at low HP during the boss fight or when the player is at low sanity in the store management mode. I can implement this using a texture for the red effect and a URP sample buffer within the shader graph.
 
 ### Activity 2
-
+<img width="644" height="752" alt="Screenshot 2026-05-27 185033" src="https://github.com/user-attachments/assets/8cacca41-44b7-4d45-baac-6d630b3f93b3" />
 
 One problem I solved today was setting up my shader graph so that it works on 2D sprites. Intiially, I was following along with the activity from last week (which was for 3D) and noticed that my shaders weren't working. I solved this issue by creating a shader graph for 2D sprites and setting up MainTex so that the shader material can be used on sprites.

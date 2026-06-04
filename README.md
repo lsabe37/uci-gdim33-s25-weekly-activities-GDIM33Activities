@@ -154,3 +154,20 @@ The game Sekiro Shadows Die Twice uses many rendering techniques to create immer
 <img width="644" height="752" alt="Screenshot 2026-05-27 185033" src="https://github.com/user-attachments/assets/8cacca41-44b7-4d45-baac-6d630b3f93b3" />
 
 One problem I solved today was setting up my shader graph so that it works on 2D sprites. Intiially, I was following along with the activity from last week (which was for 3D) and noticed that my shaders weren't working. I solved this issue by creating a shader graph for 2D sprites and setting up MainTex so that the shader material can be used on sprites.
+
+## W10
+
+### Activity 1
+The new build has improvements and additonal content in both game modes. On the anomaly hunt side, the game has several new customer NPC's. The dialogue response UI has also been visually improved and now the words become bold when the player hovers over a choice. On the boss battle side, the boss now has a death animation and a game clear screen has been implemented. The game also has an intro cutscene. 
+
+[Itch build](https://masterfrog1.itch.io/verticalslicetesttest)
+
+The goal of this playtest is check if there are any bugs. 
+
+Notes: The instructions for how to shoot the gun is hard to see because the text is white. The player should be forced to do the tutorial. To do this, the close dialogue button should be deactivated until the player chooses their response dialogue. The transition speed when switching view modes in the store is too slow.
+
+### Activity 2
+One planning strategy that we came up with was to create a breakdown of all the major components that the game will need in a Google doc. These major components will then be broken down into smaller, more specific components. Then, each of these components will have a short description on how they will be created and what their purpose will be. This will have a structure similar to a work breakdown structure and will be helpful in planning how to build the game. It will also help organize different components and features. Planning using methods like this is important so that the project's scope will be well defined. Without good planning, there is the risk of having unclear scope, which can lead to disorganized code and not enough time to add in all features.
+
+### Activity 3
+I fixed the shader graph issue that was causing the donut game objects inside the store scene to be semi-transparent.
